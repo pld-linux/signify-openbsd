@@ -21,7 +21,7 @@ OpenBSD tool to sign and verify signatures on files.
 
 %prep
 %setup -q -n signify-%{version}
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 %{__make} \
