@@ -1,19 +1,19 @@
 Summary:	OpenBSD tool to sign and verify signatures on files
 Name:		signify-openbsd
-Version:	31
+Version:	32
 Release:	1
 License:	ISC
 Group:		Applications/File
 Source0:	https://github.com/aperezdc/signify/releases/download/v%{version}/signify-%{version}.tar.xz
-# Source0-md5:	363cb222ecff75de96255241073b547d
+# Source0-md5:	2e2e41bf841a0c8e3f5febbc39823a1a
 Patch0:		link.patch
 URL:		https://github.com/aperezdc/signify
-BuildRequires:	libbsd-devel >= 0.11.0
+BuildRequires:	libbsd-devel >= 0.8
 BuildRequires:	libseccomp-devel
 BuildRequires:	pkgconfig
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
-Requires:	libbsd >= 0.11.0
+Requires:	libbsd >= 0.8
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
